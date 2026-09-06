@@ -116,18 +116,21 @@ nav a:hover {
 }
 .button {
     display: inline-block;
-    padding: 14px 26px;
-    background: #1c1c1a;
-    color: #f4f1eb;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #1746c7, #2868e8);
+    color: #ffffff;
     font-size: 13px;
+    font-weight: 600;
     letter-spacing: 0.5px;
     border-radius: 999px;
-    transition: all 0.2s ease;
+    box-shadow: 0 6px 18px rgba(23, 70, 199, 0.18);
+    transition: all 0.25s ease;
 }
 
 .button:hover {
-    background: #44423e;
-    transform: translateY(-1px);
+    background: linear-gradient(135deg, #123aa8, #1f58cf);
+    transform: translateY(-2px);
+    box-shadow: 0 9px 22px rgba(23, 70, 199, 0.25);
 }
 
 /* =========================
