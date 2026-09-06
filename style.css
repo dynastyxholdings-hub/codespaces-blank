@@ -76,6 +76,7 @@ nav {
 }
 
 nav a {
+    position: relative;
     font-size: 13px;
     color: #555555;
     transition: color 0.2s ease;
@@ -83,6 +84,32 @@ nav a {
 
 nav a:hover {
     color: #000000;
+}
+
+
+/* =========================
+   ROYAL BLUE HOVER UNDERLINE
+========================= */
+
+nav a::after,
+.section h2::after,
+.contact-section h2::after,
+.portfolio-grid div::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: #1557d6;
+    transition: width 0.25s ease;
+}
+
+nav a:hover::after,
+.section h2:hover::after,
+.contact-section h2:hover::after,
+.portfolio-grid div:hover::after {
+    width: 100%;
 }
 
 
@@ -96,6 +123,7 @@ nav a:hover {
     align-items: center;
     padding-top: 140px;
     border-bottom: 1px solid #dddddd;
+    background: #ffffff;
 }
 
 .hero h1 {
@@ -123,21 +151,27 @@ nav a:hover {
 .button {
     display: inline-block;
     padding: 14px 30px;
+
     background: linear-gradient(
         135deg,
         #0b2e91 0%,
         #1557d6 50%,
         #3b82f6 100%
     ) !important;
+
     color: #ffffff !important;
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.5px;
+
     border: none;
     border-radius: 999px;
+
     box-shadow: 0 8px 20px rgba(21, 87, 214, 0.30);
-    transition: transform 0.2s ease,
-                box-shadow 0.2s ease;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .button:hover {
@@ -147,8 +181,11 @@ nav a:hover {
         #1048b8 50%,
         #2563eb 100%
     ) !important;
+
     color: #ffffff !important;
+
     transform: translateY(-2px);
+
     box-shadow: 0 12px 26px rgba(21, 87, 214, 0.40);
 }
 
@@ -171,6 +208,7 @@ nav a:hover {
 
 .section h2,
 .contact-section h2 {
+    position: relative;
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(38px, 5vw, 60px);
     font-weight: 400;
@@ -186,16 +224,17 @@ nav a:hover {
 
 
 /* =========================
-   ROYAL BLUE CONTRAST SECTION
+   ROYAL BLUE / GREY SECTION
 ========================= */
 
 .section-dark {
     background: linear-gradient(
         135deg,
         #0b2e91 0%,
-        #1557d6 50%,
-        #2563eb 100%
+        #1557d6 45%,
+        #4b5563 100%
     );
+
     color: #ffffff;
 }
 
@@ -206,6 +245,10 @@ nav a:hover {
 .section-dark h2 {
     max-width: 700px;
     margin-bottom: 80px;
+}
+
+.section-dark h2::after {
+    background: #ffffff;
 }
 
 .principles {
@@ -255,10 +298,16 @@ nav a:hover {
 }
 
 .portfolio-grid div {
+    position: relative;
     padding: 30px 0;
     border-bottom: 1px solid #cccccc;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 24px;
+    cursor: pointer;
+}
+
+.portfolio-grid div::after {
+    bottom: 18px;
 }
 
 
