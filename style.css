@@ -230,9 +230,10 @@ nav a:hover::after,
 .section-dark {
     background: linear-gradient(
         135deg,
-        #0b2e91 0%,
-        #1557d6 45%,
-        #4b5563 100%
+         #171717 0%,
+        #343434 45%,
+        #666666 75%,
+        #8c8c8c 100%
     );
 
     color: #ffffff;
