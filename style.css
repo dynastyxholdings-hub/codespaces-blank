@@ -14,8 +14,8 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f7f7f5;
-    color: #171717;
+    background: #f4f1eb;
+    color: #1c1c1a;
     line-height: 1.6;
 }
 
@@ -35,6 +35,316 @@ a {
 }
 
 .eyebrow {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #77736b;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #f4f1eb;
+    border-bottom: 1px solid #ddd8cf;
+}
+
+.nav-container {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    font-size: 13px;
+    color: #625f59;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #1c1c1a;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding-top: 140px;
+    border-bottom: 1px solid #ddd8cf;
+}
+
+.hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 7vw, 88px);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -3px;
+    max-width: 900px;
+    margin-bottom: 35px;
+}
+
+.hero-text {
+    max-width: 590px;
+    font-size: 18px;
+    color: #625f59;
+    margin-bottom: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #1c1c1a;
+    color: #f4f1eb;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background: #44423e;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    padding: 130px 0;
+    border-bottom: 1px solid #ddd8cf;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.section h2,
+.contact-section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 60px);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+.two-column p {
+    font-size: 17px;
+    color: #625f59;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   DARK CONTRAST SECTION
+========================= */
+
+.section-dark {
+    background: #282724;
+    color: #f4f1eb;
+}
+
+.section-dark .eyebrow {
+    color: #aaa69d;
+}
+
+.section-dark h2 {
+    max-width: 700px;
+    margin-bottom: 80px;
+}
+
+.principles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.principle {
+    border-top: 1px solid #55534e;
+    padding-top: 25px;
+}
+
+.principle span {
+    font-size: 12px;
+    color: #aaa69d;
+}
+
+.principle h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0 15px;
+}
+
+.principle p {
+    color: #c0bdb5;
+    font-size: 15px;
+}
+
+
+/* =========================
+   PORTFOLIO
+========================= */
+
+.portfolio-text {
+    max-width: 650px;
+    color: #625f59;
+    font-size: 17px;
+    margin: 25px 0 60px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid #ccc7bd;
+}
+
+.portfolio-grid div {
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc7bd;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    padding: 150px 0;
+    background: #e7e2d9;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    margin-bottom: 25px;
+}
+
+.contact-section p {
+    color: #625f59;
+    font-size: 17px;
+    max-width: 550px;
+    margin-bottom: 35px;
+}
+
+.email {
+    font-size: 18px;
+    border-bottom: 1px solid #1c1c1a;
+    padding-bottom: 5px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #282724;
+    color: #aaa69d;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+footer p {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .nav-container {
+        height: 75px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 90px 0;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .principles {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 100px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}.eyebrow {
     font-size: 11px;
     letter-spacing: 2.5px;
     font-weight: 600;
@@ -232,18 +542,18 @@ nav a:hover {
     font-size: 24px;
 }
 
-
 /* =========================
    CONTACT
 ========================= */
 
 .contact-section {
-    padding: 150px 0;
-    background: #e9e9e5;
+    padding: 130px 0;
+    background: #f4f1eb;
+    border-bottom: 1px solid #ddd8cf;
 }
 
 .contact-container {
-    max-width: 900px;
+    width: min(1120px, 90%);
     margin: 0 auto;
 }
 
@@ -252,18 +562,23 @@ nav a:hover {
 }
 
 .contact-section p {
-    color: #555;
+    color: #625f59;
     font-size: 17px;
-    max-width: 550px;
+    max-width: 650px;
     margin-bottom: 35px;
 }
 
 .email {
+    display: inline-block;
     font-size: 18px;
-    border-bottom: 1px solid #171717;
+    border-bottom: 1px solid #1c1c1a;
     padding-bottom: 5px;
+    transition: opacity 0.2s ease;
 }
 
+.email:hover {
+    opacity: 0.6;
+}
 
 /* =========================
    FOOTER
