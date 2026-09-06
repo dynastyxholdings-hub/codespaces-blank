@@ -14,7 +14,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f4f1eb;
+    background: #ffffff;
     color: #1c1c1a;
     line-height: 1.6;
 }
@@ -39,7 +39,7 @@ a {
     letter-spacing: 2.5px;
     font-weight: 600;
     margin-bottom: 25px;
-    color: #77736b;
+    color: #666666;
 }
 
 
@@ -53,8 +53,8 @@ a {
     top: 0;
     left: 0;
     z-index: 1000;
-    background: #f4f1eb;
-    border-bottom: 1px solid #ddd8cf;
+    background: #ffffff;
+    border-bottom: 1px solid #dddddd;
 }
 
 .nav-container {
@@ -77,12 +77,12 @@ nav {
 
 nav a {
     font-size: 13px;
-    color: #625f59;
+    color: #555555;
     transition: color 0.2s ease;
 }
 
 nav a:hover {
-    color: #1c1c1a;
+    color: #000000;
 }
 
 
@@ -95,7 +95,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     padding-top: 140px;
-    border-bottom: 1px solid #ddd8cf;
+    border-bottom: 1px solid #dddddd;
 }
 
 .hero h1 {
@@ -111,27 +111,47 @@ nav a:hover {
 .hero-text {
     max-width: 590px;
     font-size: 18px;
-    color: #625f59;
+    color: #555555;
     margin-bottom: 40px;
 }
+
+
+/* =========================
+   BUTTON
+========================= */
+
 .button {
     display: inline-block;
-    padding: 14px 28px;
-    background: linear-gradient(135deg, #1746c7, #2868e8);
-    color: #ffffff;
+    padding: 14px 30px;
+    background: linear-gradient(
+        135deg,
+        #0b2e91 0%,
+        #1557d6 50%,
+        #3b82f6 100%
+    ) !important;
+    color: #ffffff !important;
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.5px;
+    border: none;
     border-radius: 999px;
-    box-shadow: 0 6px 18px rgba(23, 70, 199, 0.18);
-    transition: all 0.25s ease;
+    box-shadow: 0 8px 20px rgba(21, 87, 214, 0.30);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
 }
 
 .button:hover {
-    background: linear-gradient(135deg, #123aa8, #1f58cf);
+    background: linear-gradient(
+        135deg,
+        #08246f 0%,
+        #1048b8 50%,
+        #2563eb 100%
+    ) !important;
+    color: #ffffff !important;
     transform: translateY(-2px);
-    box-shadow: 0 9px 22px rgba(23, 70, 199, 0.25);
+    box-shadow: 0 12px 26px rgba(21, 87, 214, 0.40);
 }
+
 
 /* =========================
    SECTIONS
@@ -139,7 +159,8 @@ nav a:hover {
 
 .section {
     padding: 130px 0;
-    border-bottom: 1px solid #ddd8cf;
+    background: #ffffff;
+    border-bottom: 1px solid #dddddd;
 }
 
 .two-column {
@@ -159,22 +180,27 @@ nav a:hover {
 
 .two-column p {
     font-size: 17px;
-    color: #625f59;
+    color: #555555;
     margin-bottom: 25px;
 }
 
 
 /* =========================
-   DARK CONTRAST SECTION
+   ROYAL BLUE CONTRAST SECTION
 ========================= */
 
 .section-dark {
-    background: #282724;
-    color: #f4f1eb;
+    background: linear-gradient(
+        135deg,
+        #0b2e91 0%,
+        #1557d6 50%,
+        #2563eb 100%
+    );
+    color: #ffffff;
 }
 
 .section-dark .eyebrow {
-    color: #aaa69d;
+    color: #dbe7ff;
 }
 
 .section-dark h2 {
@@ -189,13 +215,13 @@ nav a:hover {
 }
 
 .principle {
-    border-top: 1px solid #55534e;
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
     padding-top: 25px;
 }
 
 .principle span {
     font-size: 12px;
-    color: #aaa69d;
+    color: #dbe7ff;
 }
 
 .principle h3 {
@@ -206,7 +232,7 @@ nav a:hover {
 }
 
 .principle p {
-    color: #c0bdb5;
+    color: #e5edff;
     font-size: 15px;
 }
 
@@ -217,7 +243,7 @@ nav a:hover {
 
 .portfolio-text {
     max-width: 650px;
-    color: #625f59;
+    color: #666666;
     font-size: 17px;
     margin: 25px 0 60px;
 }
@@ -225,12 +251,12 @@ nav a:hover {
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border-top: 1px solid #ccc7bd;
+    border-top: 1px solid #cccccc;
 }
 
 .portfolio-grid div {
     padding: 30px 0;
-    border-bottom: 1px solid #ccc7bd;
+    border-bottom: 1px solid #cccccc;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 24px;
 }
@@ -242,12 +268,8 @@ nav a:hover {
 
 .contact-section {
     padding: 150px 0;
-    background: #e7e2d9;
-}
-
-.contact-container {
-    max-width: 900px;
-    margin: 0 auto;
+    background: #ffffff;
+    border-bottom: 1px solid #dddddd;
 }
 
 .contact-section h2 {
@@ -255,317 +277,7 @@ nav a:hover {
 }
 
 .contact-section p {
-    color: #625f59;
-    font-size: 17px;
-    max-width: 550px;
-    margin-bottom: 35px;
-}
-
-.email {
-    font-size: 18px;
-    border-bottom: 1px solid #1c1c1a;
-    padding-bottom: 5px;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    background: #282724;
-    color: #aaa69d;
-    padding: 30px 0;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-footer p {
-    font-size: 11px;
-    letter-spacing: 0.5px;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 700px) {
-
-    .nav-container {
-        height: 75px;
-    }
-
-    nav {
-        gap: 18px;
-    }
-
-    nav a {
-        font-size: 12px;
-    }
-
-    .hero {
-        min-height: 80vh;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-        letter-spacing: -2px;
-    }
-
-    .hero-text {
-        font-size: 16px;
-    }
-
-    .section {
-        padding: 90px 0;
-    }
-
-    .two-column {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .principles {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-section {
-        padding: 100px 0;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-}.eyebrow {
-    font-size: 11px;
-    letter-spacing: 2.5px;
-    font-weight: 600;
-    margin-bottom: 25px;
-    color: #666;
-}
-
-
-/* =========================
-   NAVIGATION
-========================= */
-
-.navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background: #f7f7f5;
-    border-bottom: 1px solid #ddd;
-}
-
-.nav-container {
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-nav {
-    display: flex;
-    gap: 35px;
-}
-
-nav a {
-    font-size: 13px;
-    color: #555;
-    transition: color 0.2s ease;
-}
-
-nav a:hover {
-    color: #000;
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    padding-top: 90px;
-    border-bottom: 1px solid #ddd;
-}
-
-.hero h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(48px, 7vw, 88px);
-    font-weight: 400;
-    line-height: 1.05;
-    letter-spacing: -3px;
-    max-width: 900px;
-    margin-bottom: 35px;
-}
-
-.hero-text {
-    max-width: 590px;
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 40px;
-}
-
-.button {
-    display: inline-block;
-    padding: 14px 25px;
-    background: #171717;
-    color: white;
-    font-size: 13px;
-    letter-spacing: 0.5px;
-    transition: all 0.2s ease;
-}
-
-.button:hover {
-    background: #444;
-}
-
-
-/* =========================
-   SECTIONS
-========================= */
-
-.section {
-    padding: 130px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.two-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-}
-
-.section h2,
-.contact-section h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(38px, 5vw, 60px);
-    font-weight: 400;
-    line-height: 1.1;
-    letter-spacing: -2px;
-}
-
-.two-column p {
-    font-size: 17px;
-    color: #555;
-    margin-bottom: 25px;
-}
-
-
-/* =========================
-   DARK SECTION
-========================= */
-
-.section-dark {
-    background: #171717;
-    color: white;
-}
-
-.section-dark .eyebrow {
-    color: #aaa;
-}
-
-.section-dark h2 {
-    max-width: 700px;
-    margin-bottom: 80px;
-}
-
-.principles {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
-}
-
-.principle {
-    border-top: 1px solid #555;
-    padding-top: 25px;
-}
-
-.principle span {
-    font-size: 12px;
-    color: #999;
-}
-
-.principle h3 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 30px;
-    font-weight: 400;
-    margin: 20px 0 15px;
-}
-
-.principle p {
-    color: #aaa;
-    font-size: 15px;
-}
-
-
-/* =========================
-   PORTFOLIO
-========================= */
-
-.portfolio-text {
-    max-width: 650px;
-    color: #666;
-    font-size: 17px;
-    margin: 25px 0 60px;
-}
-
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border-top: 1px solid #ccc;
-}
-
-.portfolio-grid div {
-    padding: 30px 0;
-    border-bottom: 1px solid #ccc;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 24px;
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact-section {
-    padding: 130px 0;
-    background: #f4f1eb;
-    border-bottom: 1px solid #ddd8cf;
-}
-
-.contact-container {
-    width: min(1120px, 90%);
-    margin: 0 auto;
-}
-
-.contact-section h2 {
-    margin-bottom: 25px;
-}
-
-.contact-section p {
-    color: #625f59;
+    color: #555555;
     font-size: 17px;
     max-width: 650px;
     margin-bottom: 35px;
@@ -583,13 +295,14 @@ nav a:hover {
     opacity: 0.6;
 }
 
+
 /* =========================
    FOOTER
 ========================= */
 
 footer {
     background: #171717;
-    color: #aaa;
+    color: #aaaaaa;
     padding: 30px 0;
 }
 
@@ -625,6 +338,7 @@ footer p {
 
     .hero {
         min-height: 80vh;
+        padding-top: 110px;
     }
 
     .hero h1 {
