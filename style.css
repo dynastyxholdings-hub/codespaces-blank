@@ -87,30 +87,6 @@ nav a:hover {
 }
 
 
-/* =========================
-   ROYAL BLUE HOVER UNDERLINE
-========================= */
-
-nav a::after,
-.section h2::after,
-.contact-section h2::after,
-.portfolio-grid div::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 0;
-    height: 2px;
-    background: #1557d6;
-    transition: width 0.25s ease;
-}
-
-nav a:hover::after,
-.section h2:hover::after,
-.contact-section h2:hover::after,
-.portfolio-grid div:hover::after {
-    width: 100%;
-}
 
 
 /* =========================
