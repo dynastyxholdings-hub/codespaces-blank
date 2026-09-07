@@ -87,6 +87,50 @@ nav a:hover {
 }
 
 
+/* Navigation hover underline */
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: #1557d6;
+    transition: width 0.25s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================
+   TITLE HOVER LINES
+========================= */
+
+.section h2,
+.contact-section h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.section h2::after,
+.contact-section h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 3px;
+    background: #1557d6;
+    transition: width 0.3s ease;
+}
+
+.section h2:hover::after,
+.contact-section h2:hover::after {
+    width: 100%;
+}
 
 
 /* =========================
@@ -133,9 +177,10 @@ nav a:hover {
         #0b2e91 0%,
         #1557d6 50%,
         #3b82f6 100%
-    ) !important;
+    );
 
     color: #ffffff !important;
+
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -156,7 +201,7 @@ nav a:hover {
         #08246f 0%,
         #1048b8 50%,
         #2563eb 100%
-    ) !important;
+    );
 
     color: #ffffff !important;
 
@@ -184,7 +229,6 @@ nav a:hover {
 
 .section h2,
 .contact-section h2 {
-    position: relative;
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(38px, 5vw, 60px);
     font-weight: 400;
@@ -200,13 +244,13 @@ nav a:hover {
 
 
 /* =========================
-   ROYAL BLUE / GREY SECTION
+   GRAY GRADIENT SECTION
 ========================= */
 
 .section-dark {
     background: linear-gradient(
         135deg,
-         #171717 0%,
+        #171717 0%,
         #343434 45%,
         #666666 75%,
         #8c8c8c 100%
@@ -216,7 +260,7 @@ nav a:hover {
 }
 
 .section-dark .eyebrow {
-    color: #dbe7ff;
+    color: #dddddd;
 }
 
 .section-dark h2 {
@@ -224,8 +268,11 @@ nav a:hover {
     margin-bottom: 80px;
 }
 
+
+/* Title hover line inside gray section */
+
 .section-dark h2::after {
-    background: #ffffff;
+    background: #1557d6;
 }
 
 .principles {
@@ -241,7 +288,7 @@ nav a:hover {
 
 .principle span {
     font-size: 12px;
-    color: #dbe7ff;
+    color: #dddddd;
 }
 
 .principle h3 {
@@ -252,7 +299,7 @@ nav a:hover {
 }
 
 .principle p {
-    color: #e5edff;
+    color: #e5e5e5;
     font-size: 15px;
 }
 
@@ -275,16 +322,10 @@ nav a:hover {
 }
 
 .portfolio-grid div {
-    position: relative;
     padding: 30px 0;
     border-bottom: 1px solid #cccccc;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 24px;
-    cursor: pointer;
-}
-
-.portfolio-grid div::after {
-    bottom: 18px;
 }
 
 
