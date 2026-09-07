@@ -86,9 +86,6 @@ nav a:hover {
     color: #000000;
 }
 
-
-/* Navigation hover underline */
-
 nav a::after {
     content: "";
     position: absolute;
@@ -103,35 +100,6 @@ nav a::after {
 nav a:hover::after {
     width: 100%;
 }
-
-
-/* =========================
-   TITLE HOVER LINES
-========================= */
-
-.section h2,
-.contact-section h2 {
-    position: relative;
-    display: inline-block;
-}
-
-.section h2::after,
-.contact-section h2::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 0;
-    height: 3px;
-    background: #1557d6;
-    transition: width 0.3s ease;
-}
-
-.section h2:hover::after,
-.contact-section h2:hover::after {
-    width: 100%;
-}
-
 
 /* =========================
    HERO
@@ -269,11 +237,6 @@ nav a:hover::after {
 }
 
 
-/* Title hover line inside gray section */
-
-.section-dark h2::after {
-    background: #1557d6;
-}
 
 .principles {
     display: grid;
